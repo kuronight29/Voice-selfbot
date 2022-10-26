@@ -10,7 +10,8 @@ client.on('ready', async () => {
         const VoiceConnection = joinVoiceChannel({
             channelId: "935924655951347712", 
             guildId: "755793441287438469", 
-            adapterCreator: channel.guild.voiceAdapterCreator 
+            adapterCreator: channel.guild.voiceAdapterCreator,
+            selfDeaf: false
         });
     });
 })
